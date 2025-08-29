@@ -53,7 +53,7 @@ export default async function handler(req, res) {
     });
 
     // Başarıyla bağlandı → öne yönlendir
-    return res.writeHead(302, { Location: "/connect-success" }).end();
+    return res.writeHead(302, { Location: "/connect-success.html" }).end();
   } catch (e) {
     return res.status(500).json({ error: e.message });
   }
